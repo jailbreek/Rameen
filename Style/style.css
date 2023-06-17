@@ -1,0 +1,13 @@
+﻿body {
+}
+
+#navBar {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#navBar li {
+    display: inline-block;
+    margin-right: 10px;
+}

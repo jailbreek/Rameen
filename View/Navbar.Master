@@ -1,0 +1,36 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Navbar.master.cs" Inherits="Raameenn.View.Navbar" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Home</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form" runat="server">
+    <div>
+        <section>
+            <nav>
+                <div >
+                    <ul> 
+                        <li>
+                            <asp:PlaceHolder ID="menuHolder" runat="server"></asp:PlaceHolder>
+                            <asp:Button ID="btnLogout" runat="server" Text="Logout" OnClick="btnLogout_Click" />
+                            <p>
+                                <strong>LoggedIn as:</strong>
+                                <asp:Label ID="lblrole" runat="server"></asp:Label>
+                            </p>
+                            <p><asp:Label ID="currentTimeLabel" runat="server" ClientIDMode="Static"></asp:Label></p>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </section>
+    <asp:ContentPlaceHolder ID="contentHolder" runat="server">
+        </asp:ContentPlaceHolder>
+    </div>
+</form>
+</body>
+</html>
